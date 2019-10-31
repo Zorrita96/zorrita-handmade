@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro|Fredericka+the+Great|Reem+Kufi|Megrim|Comfortaa|Dosis|Gloria+Hallelujah|Julius+Sans+One|Kaushan+Script|Pacifico|Permanent+Marker|Rajdhani|Satisfy|Stylish|Unica+One&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e2e2e2;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 10px;
+  color: black;
+  width: 100%;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 80px;
+  padding: 0px 20px;
+  background-color: #e2e2e2;
+  justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 0px;
+    justify-content: center;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 20vw;
+  font-size: 70px;
+  color: #ffce3d;
+}
+
+i {
+  color: #ffc814;
+}
+
+@media (max-width: 650px) {
+  .logo {
+    width: 0px;
+    display: none;
+  }
+}
+
+.logo > img {
+  display: flex;
+  margin-left: 40px;
+  max-height: 80px;
+}
+
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+
+nav {
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  padding: 20px;
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    width: 100%;  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  .nav-link {
+  padding: 10px;
+  }
+}
+
+.content {
+  margin-top: 80px;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .content {
+    margin-top: 120px;
+  }
+}
+
+h1 {
+  font-family: 'Megrim', cursive;
+  font-size: 5.5em;
+  padding: 10px 0;
+  margin-bottom: 0;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  padding: 90px 0;
+}
+
+.prod {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 13%;
+  margin: 0 1%;
+  background-color: white;
+}
+
+.prod_pic > img {
+  display: flex;
+  max-width: 100%;
+  padding: 3%;
+}
+
+@media (max-width: 800px) {
+  #products {
+    flex-direction: column;
+  }
+  .prod {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+#vid {
+  display: flex;
+  justify-content: center;
+}
+
+iframe {
+  width: 100%;
+  max-width: 560px;
+}
+
+@media (max-width: 650px) {
+  iframe {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+#pricing {
+  margin: 0 12%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.price_pack {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: calc(100%  / 3);
+  margin: 50px 1.5%;
+  background-color: white;
+  font-size: 2em;
+  border-radius: 5px;
+}
+
+.pack_name {
+  padding: 10px;
+  background-color: #fff6b2;
+  width: 100%;
+}
+
+.price_pack > p {
+  font-size: 0.9em;
+  padding: 0 30px;
+}
+
+.button {
+  width: 50%;
+  height: 40px;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  border-radius: 5%;
+  border: 0;
+  color: #3a3a3a;
+  background-color: #ffee5e;
+  cursor: pointer;
+}
+
+.price_pack > button {
+  justify-self: flex-end;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .price_pack {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 50px 0;
+}
+
+label {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+input[type="email"] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+  margin: 20px;
+}
+
+input[type="submit"] {
+  max-width: 150px;
+  width: 100%;
+  height: 40px;
+  font-size: 1.8em;
+}
+
+.button:hover {
+  border: 1px solid black;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  font-size: 1.4em;
+}
+
+footer > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer > ul > li {
+  margin: 10px;
+}
+
+footer > span {
+  margin-right: 50px;
+}
+
+@media (max-width: 650px) {
+  footer {
+    font-size: 1em;
+  }
+}
